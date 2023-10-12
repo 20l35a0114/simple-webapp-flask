@@ -6,7 +6,7 @@ color = "red"
 @app.route("/")
 def main():
     print(color)
-    return render_templet ('hello.html', color=color)
+    return render_template ('hello.html',color=color)
 
 @app.route('/how are you')
 def hello():
