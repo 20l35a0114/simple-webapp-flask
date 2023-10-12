@@ -10,7 +10,7 @@ def main():
 def hello():
     return 'I am good, how about you?'
 
-@app.route('/who are you?')
+@app.route('/who are you')
 def hello2():
     return 'I am uday'    
 
