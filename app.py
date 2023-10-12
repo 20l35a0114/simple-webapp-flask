@@ -2,9 +2,11 @@ import os
 from flask import Flask
 app = Flask(__name__)
 
+color = "red"
 @app.route("/")
 def main():
-    return "Welcome!"
+    print(color)
+    return render_templet ('hello.html', color=color)
 
 @app.route('/how are you')
 def hello():
